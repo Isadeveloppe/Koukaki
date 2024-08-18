@@ -1,0 +1,77 @@
+/**** GENERAL ****/
+
+/*Mise en forme des titres des sections*/
+h2 {
+	color: #FFF5E9;
+	font-size: 4.429rem;
+	background-image: url("../images/purple_title_bg.png");
+	background-color: #FFF5E9;
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding: 1em 2em;
+	margin: 0;
+	background-position: center;
+	text-align: center;
+	width: 100%;
+  }
+/*Section "story"*/
+  .story {
+	top: 115px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+  
+	h2::before {
+	  content: url("../images/sunflower-leaves.png");
+	  position: absolute;
+	}
+  
+	h2::after {
+	  content: url("../images/sunflower.png");
+	  position: absolute;
+	}
+  
+	&__article {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  text-align: center;
+	  width: 50%;
+	  font-size: 15px;
+	  padding-bottom: 2em;
+	  background-color: #FFF5E9;
+  
+	  &::before {
+		content: url("../images/hibiscus-leaves.png");
+		position: absolute;
+		top:-4em;
+	  }
+  
+	  &::after {
+		content: url("../images/hibiscus.png");
+		position: absolute;
+		top:-10em;
+	  }
+	}
+ /*Mise en forme de la section "place"*/ 
+	#place > div p {
+	  padding-left: 5em;
+	  top: 250px;
+	}
+  }
+  
+/*Mise en forme de la section "place"*/ 
+  #studio {
+	position: relative;
+	margin-top: 12em;
+  }
+
+  #studio > div::before {
+	content: url("../images/trple-leaf.png");
+	position: absolute;
+	left: calc(50% - 17.225px);
+	margin-top: 55px;
+  }
+  

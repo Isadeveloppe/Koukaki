@@ -1,0 +1,74 @@
+/*Création d'une mixin pour la rotation de toutes les fleurs*/
+@mixin flower-rotation {
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  animation: rotate 15s infinite linear;
+  line-height: 0%;
+}
+
+// Utilisation de la mixin flower-rotation
+.story__article::after {
+  @include flower-rotation;
+}
+
+.story h2::after {
+  @include flower-rotation;
+}
+
+#studio h2::before {
+  @include flower-rotation;
+}
+
+#studio h2::after {
+  @include flower-rotation;
+}
+
+.nomination::before {
+  @include flower-rotation;
+}
+
+.nomination::after {
+  @include flower-rotation;
+}
+
+.burger-orchid {
+  @include flower-rotation;
+}
+
+.burger-flower {
+  @include flower-rotation;
+}
+
+.burger-sunflower {
+  @include flower-rotation;
+}
+
+.burger-randomflower {
+  @include flower-rotation;
+}
+
+.burger-hibiscus {
+  @include flower-rotation;
+}
+
+.hibiscus-footer {
+  @include flower-rotation;
+}
+
+// Création d'une animation spécifique pour l'hibiscus du footer*/
+@keyframes rotateFlower {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

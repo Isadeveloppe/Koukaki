@@ -1,0 +1,28 @@
+/*Mise ne forme du footer*/
+.site-footer {
+  position: relative;
+  display: flex;
+  padding-top: 18em;
+  padding-bottom: 1em;
+  overflow: hidden;
+
+  /*Annulation de la présence des fleurs reportées dans la section "osacars-animation"*/
+  &::before {
+    display: none;
+  }
+
+  &::after {
+    display: none;
+  }
+
+/*Mise en forme de l'hibiscus du footer*/
+  ul::after {
+    content: url("../images/hibiscus_footer.png");
+    position: absolute;
+    left: 400px;
+    bottom: -28.5em;
+    z-index: -1;
+    animation: rotateFlower 15s linear infinite;
+  }
+}
+

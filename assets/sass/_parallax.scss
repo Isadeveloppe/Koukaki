@@ -1,0 +1,34 @@
+/**** PARALLAX NUAGES ****/
+#place {
+    display: flex;
+    background-image: url('../images/koukaki-place.png') !important;
+    width: 100%;
+    min-height: 699px;
+    background-size: cover;
+    margin-top: -100px;
+  
+    div {
+      margin-left: 10em !important;
+      margin-top: 100px;
+    }
+  
+    .bigcloud {
+      width: 316px;
+      height: 122px;
+      position: relative;
+      top: -380px;
+      left: 880px;
+      filter: blur(10px);
+    
+    }
+  
+    .littlecloud {
+      width: 142px;
+      height: 55px;
+      top: -330px;
+      left: 650px;
+      position: relative;
+      filter: blur(12px);
+    }
+  }
+  
